@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+	<title>Property Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form id="property-form">
+		<!-- Step 1 -->
+		<div id="step-1">
+			<label for="address">Address:</label>
+			<input type="text" id="address" name="address">
+			<button id="next-1" type="button">Next</button>
+		</div>
+	<!-- Step 2 -->
+	<div id="step-2" class="hide">
+		<p>Category:</p>
+		<label for="sell">Sell</label>
+		<input type="radio" id="sell" name="category" value="sell">
+		<label for="rent">Rent</label>
+		<input type="radio" id="rent" name="category" value="rent">
+		<button id="prev-2" type="button">Previous</button>
+		<button id="next-2" type="button">Next</button>
+	</div>
+	
+	<!-- Step 3 -->
+	<div id="step-3" class="hide">
+		<p>Property Type:</p>
+		<label for="home">Home</label>
+		<input type="radio" id="home" name="property-type" value="home">
+		<label for="condo">Condo</label>
+		<input type="radio" id="condo" name="property-type" value="condo">
+		<label for="apartment">Apartment</label>
+		<input type="radio" id="apartment" name="property-type" value="apartment">
+		<label for="room">Room</label>
+		<input type="radio" id="room" name="property-type" value="room">
+		<button id="prev-3" type="button">Previous</button>
+		<button id="next-3" type="button">Next</button>
+	</div>
+	
+	<!-- Step 4 -->
+	<div id="step-4" class="hide">
+		<div id="bedrooms-container" class="hide">
+			<label for="bedrooms">Bedrooms:</label>
+			<input type="text" id="bedrooms" name="bedrooms">
+			<label for="bathrooms">Bathrooms:</label>
+			<input type="text" id="bathrooms" name="bathrooms">
+		</div>
+		<div id="room-bathroom-container" class="hide">
+			<p>Does the room have a bathroom?</p>
+			<label for="no-bathroom">No Bathroom</label>
+			<input type="radio" id="no-bathroom" name="room-bathroom" value="no-bathroom">
+			<label for="with-bathroom">With Bathroom</label>
+			<input type="radio" id="with-bathroom" name="room-bathroom" value="with-bathroom">
+		</div>
+		<button id="prev-4" type="button">Previous</button>
+		<button id="next-4" type="button">Next</button>
+	</div>
+	
+	<!-- Step 5 -->
+	<div id="step-5" class="hide">
+		<p>Amenities:</p>
+		<label for="restaurants">Restaurants</label>
+		<input type="checkbox" id="restaurants" name="amenities[]" value="restaurants">
+		<label for="schools">Schools</label>
+		<input type="checkbox" id="schools" name="amenities[]" value="schools">
+		<label for="hospitals">Hospitals</label>
+		<input type="checkbox" id="hospitals" name="amenities[]" value="hospitals">
+		<label for="public-transportation">Public Transportation</label>
+		<input type="checkbox" id="public-transportation" name="amenities[]" value="public-transportation">
+		<button id="prev-5" type="button">Previous</button>
+		<button id="submit" type="submit">Submit</button>
+	</div>
+</form>
+  <script src="script.js"></script>
+</body>
+</html>
