@@ -31,11 +31,9 @@ next3.addEventListener("click", function() {
   if (document.querySelector('input[name="property-type"]:checked')) {
     const propertyType = document.querySelector('input[name="property-type"]:checked').value;
     if (propertyType === "room") {
-      document.querySelector("#bedrooms-container").classList.add("hide");
-      document.querySelector("#room-bathroom-container").classList.remove("hide");
+      document.querySelector("#room-bathroom").classList.remove("hide");
     } else {
-      document.querySelector("#bedrooms-container").classList.remove("hide");
-      document.querySelector("#room-bathroom-container").classList.add("hide");
+      document.querySelector("#bedrooms-bathrooms").classList.remove("hide");
     }
     step3.classList.add("hide");
     step4.classList.remove("hide");
@@ -49,6 +47,7 @@ next4.addEventListener("click", function() {
     step5.classList.remove("hide");
   }
 });
+
 
 prev2.addEventListener("click", function() {
   step2.classList.add("hide");
