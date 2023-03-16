@@ -7,10 +7,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<h1>HomeScript</h1>
+		<p>Create unqiue, custom and enticing property descriptions for your listings.</p>
 	<form id="property-form">
 		<!-- Step 1 -->
 		<div id="step-1">
-			<label for="address">Address:</label>
+			<label for="address"> Enter the Address:</label>
 			<input type="text" id="address" name="address">
 			<button id="next-1" type="button">Next</button>
 		</div>
@@ -42,34 +44,105 @@
 	
 	<!-- Step 4 -->
 	<div id="step-4" class="hide">
-		<div id="bedrooms-container" class="hide">
-			<label for="bedrooms">Bedrooms:</label>
-			<input type="text" id="bedrooms" name="bedrooms">
-			<label for="bathrooms">Bathrooms:</label>
-			<input type="text" id="bathrooms" name="bathrooms">
+		<div id="bedrooms-bathrooms" class="hide">
+			
+			<label for="bedrooms">Number of bedrooms:</label>
+				<select name="bedrooms" id="bedrooms">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+
+			<label for="bathrooms">Number of Bathrooms:</label>
+				<select name="bathrooms" id="bathrooms">
+					<option value="0.5">0.5</option>
+					<option value="1">1</option>
+					<option value="1.5">1.5</option>
+					<option value="2">2</option>
+					<option value="2.5">2.5</option>
+					<option value="3">3</option>
+					<option value="3.5">3.5</option>
+					<option value="4">4</option>
+					<option value="4.5">4.5</option>
+					<option value="5">5</option>
+					<option value="5.5">5.5</option>
+					<option value="6">6</option>
+					<option value="6.5">6.5</option>
+					<option value="7">7</option>
+					<option value="7.5">7.5</option>
+					<option value="8">8</option>
+					<option value="8.5">8.5</option>
+					<option value="9">9</option>
+					<option value="9.5">9.5</option>
+					<option value="10">10</option>
+				</select>
 		</div>
-		<div id="room-bathroom-container" class="hide">
+		<div id="room-bathroom" class="hide">
 			<p>Does the room have a bathroom?</p>
-			<label for="no-bathroom">No Bathroom</label>
-			<input type="radio" id="no-bathroom" name="room-bathroom" value="no-bathroom">
-			<label for="with-bathroom">With Bathroom</label>
-			<input type="radio" id="with-bathroom" name="room-bathroom" value="with-bathroom">
-		</div>
+			<label for="no-bathroom">No</label>
+			<input type="radio" id="no-bathroom" name="room-bathroom" value="false">
+			<label for="with-bathroom">Yes</label>
+			<input type="radio" id="with-bathroom" name="room-bathroom" value="true">
+	</div>	
 		<button id="prev-4" type="button">Previous</button>
 		<button id="next-4" type="button">Next</button>
 	</div>
 	
 	<!-- Step 5 -->
 	<div id="step-5" class="hide">
-		<p>Amenities:</p>
-		<label for="restaurants">Restaurants</label>
-		<input type="checkbox" id="restaurants" name="amenities[]" value="restaurants">
-		<label for="schools">Schools</label>
-		<input type="checkbox" id="schools" name="amenities[]" value="schools">
-		<label for="hospitals">Hospitals</label>
-		<input type="checkbox" id="hospitals" name="amenities[]" value="hospitals">
-		<label for="public-transportation">Public Transportation</label>
-		<input type="checkbox" id="public-transportation" name="amenities[]" value="public-transportation">
+		<div id="amenities">
+			<h2>Amenities:</h2>
+				<p>Check which amenities come with your listing</p>
+					<label for="dish-washer">Dish Washer</label>
+						<input type="checkbox" id="dish-washer" name="amenities[]" value="dish-washer">
+					<label for="washer-dryer">Washer & Dryer</label>
+						<input type="checkbox" id="washer-dryer" name="amenities[]" value="washer-dryer">
+					<label for="air-conditioner">Air Conditioner</label>
+						<input type="checkbox" id="air-conditioner" name="amenities[]" value="air-conditioner">
+					<label for="central-ac-heating">Central AC & Heating</label>
+						<input type="checkbox" id="central-ac-heating" name="amenities[]" value="central-ac-heating">
+					<label for="concierge">Concierge</label>
+						<input type="checkbox" id="concierge" name="amenities[]" value="concierge">
+					<label for="parking">Parking</label>
+						<input type="checkbox" id="parking" name="amenities[]" value="parking">
+					<label for="in-building-gym">Gym on premises </label>
+						<input type="checkbox" id="in-building-gym" name="amenities[]" value="in-building-gym"><br>
+		</div>
+		<div id="local-desirables">
+			<h2>Local Amenities</h2>
+				<p>Check which local businesses and public assets you want to highlight in your generated description</p>
+					<label for="restaurants">Restaurants</label>
+						<input type="checkbox" id="restaurants" name="amenities[]" value="restaurants">
+					<label for="schools">Schools</label>
+						<input type="checkbox" id="schools" name="amenities[]" value="schools">
+					<label for="hospitals">Hospitals</label>
+						<input type="checkbox" id="hospitals" name="amenities[]" value="hospitals">
+					<label for="public-transportation">Public Transportation</label>
+						<input type="checkbox" id="public-transportation" name="amenities[]" value="public-transportation">
+					<label for="neighborhood">Neighborhood</label>
+						<input type="checkbox" id="neighborhood" name="amenities[]" value="neighborhood">
+					<label for="tourist-attractions">Tourist Attractions</label>
+						<input type="checkbox" id="tourist-attractions" name="amenities[]" value="tourist-attractions">
+					<label for="historic-landmarks">Historic Landmarks</label>"
+						<input type="checkbox" id="historic-landmarks" name="amenities[]" value="historic-landmarks">
+					<label for="police-stations">Police Stations</label>
+						<input type="checkbox" id="police-stations" name="amenities[]" value="police-stations">
+					<label for="fire-stations">Fire Stations</label>
+						<input type="checkbox" id="fire-stations" name="amenities[]" value="fire-stations">
+					<label for="gyms">Gyms</label>
+						<input type="checkbox" id="gyms" name="amenities[]" value="gyms">
+					<label for="banks">Banks</label>
+						<input type="checkbox" id="banks" name="amenities[]" value="banks">
+					<label for="shopping-centers">Shopping Centers</label>
+						<input type="checkbox" id="shopping-centers" name="amenities[]" value="shopping-centers">
+					<label for="department-stores">Department Stores</label>
+						<input type="checkbox" id="department-stores" name="amenities[]" value="department-stores">
+					<label for="popular-stores">Popular Stores</label>
+						<input type="checkbox" id="popular-stores" name="amenities[]" value="popular-stores"><br>
+			</div>
+
 		<button id="prev-5" type="button">Previous</button>
 		<button id="submit" type="submit">Submit</button>
 	</div>
