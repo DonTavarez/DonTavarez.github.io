@@ -1,3 +1,44 @@
 .hide {
   display: none;
 }
+
+#prev-5, #submit {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#step-5 label[for="dish-washer"],
+#step-5 label[for="washer-dryer"],
+#step-5 label[for="air-conditioner"],
+#step-5 label[for="central-ac-heating"],
+#step-5 label[for="concierge"],
+#step-5 label[for="parking"],
+#step-5 label[for="in-building-gym"] {
+    margin-bottom: 10px;
+}
+
+#step-5 label[for="restaurants"],
+#step-5 label[for="schools"],
+#step-5 label[for="hospitals"],
+#step-5 label[for="public-transportation"],
+#step-5 label[for="neighborhood"],
+#step-5 label[for="tourist-attractions"],
+#step-5 label[for="historic-landmarks"],
+#step-5 label[for="police-stations"],
+#step-5 label[for="fire-stations"],
+#step-5 label[for="gyms"],
+#step-5 label[for="banks"],
+#step-5 label[for="shopping-centers"],
+#step-5 label[for="department-stores"],
+#step-5 label[for="popular-stores"] {
+    margin-bottom: 10px;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
